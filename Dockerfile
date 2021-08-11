@@ -74,10 +74,10 @@ ENV JAVA_HOME=/opt/java/openjdk \
     PATH="/opt/java/openjdk/bin:$PATH"
 WORKDIR /opt/app
 COPY java_runner.sh /opt/app
-RUN chown 1001 /opt/app \
-    chmod "g+rwX" /opt/app \
-    chown 1001:root /opt/app \
-	chown 1001 /opt/app/java_runner.sh  \
-    chmod 540 /opt/app/java_runner.sh ;
+RUN chown 1001 /opt/app; \
+    chmod "g+rwX" /opt/app; \
+    chown 1001:root /opt/app; \
+	chown 1001 /opt/app/java_runner.sh;  \
+    chmod 540 /opt/app/java_runner.sh;
 USER 1001
 CMD ["/bin/bash","/opt/app/java_runner.sh","run"]
