@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "AdoptOpenJDK11 - JRE"
+echo "Adoptium Temurin OpenJDK11 - JRE"
 export JRE_OPTION="-XX:+UseParallelOldGC -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:MaxMetaspaceSize=100m -XX:+ExitOnOutOfMemoryError"
 if [ ! -z "$JAVA_OPTIONS" ]
 then	

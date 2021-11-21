@@ -1,4 +1,4 @@
-# AdoptOpenJDK11 - OCI Image JRE11 minimal
+# Adoptium Temurin OpenJDK11 - OCI Image JRE11 minimal
 Custom Images for Java11 Runners
 
 Image build with default charset _en_US.UTF-8_
